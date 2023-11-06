@@ -15,7 +15,7 @@
 }
 
 .logo {
-  @apply text-white text-2xl font-playfair;
+  @apply text-white text-2xl font-playfair font-semibold;
 }
 
 .nav-menu {
@@ -40,7 +40,7 @@
 }
 
 .nav-btn {
-  @apply relative text-2xl text-bgColor capitalize lg:ml-8 lg:text-base;
+  @apply relative text-xl text-bgColor capitalize lg:ml-5 lg:text-base;
 }
 
 .nav-menu > .login-acc {
@@ -48,7 +48,11 @@
 }
 
 .nav-menu > .register-acc {
-  @apply hover:text-bgColor;
+  @apply hover:text-bgColor lg:py-2;
+}
+
+.nav-menu > .logo {
+  @apply lg:hidden;
 }
 
 .menu {

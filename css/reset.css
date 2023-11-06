@@ -50,7 +50,7 @@ section {
 }
 
 .heading-title {
-  @apply text-white text-2xl mb-2 md:text-[2rem];
+  @apply text-white text-2xl font-bold mb-2 md:text-[2rem];
 }
 
 .heading-text {
