@@ -1,0 +1,76 @@
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-light font-openSan text-body bg-bgColor;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-playfair leading-[150%];
+}
+
+p {
+  @apply leading-[150%];
+}
+
+img {
+  @apply max-w-full h-auto;
+}
+
+main {
+  @apply overflow-hidden;
+}
+
+div,
+section {
+  @apply relative;
+}
+
+.section {
+  @apply w-full mx-auto px-4 sm:max-w-[600px] md:max-w-[992px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+}
+
+.btn {
+  @apply relative overflow-hidden inline-flex items-center justify-center py-3 px-4 font-openSan font-medium text-base rounded-md text-bgColor cursor-pointer duration-300 bg-main hover:bg-mainAlt;
+}
+
+.heading {
+  @apply w-full mx-auto mb-8 sm:text-center md:w-[80%] lg:w-3/4;
+}
+
+.pre-heading {
+  @apply text-yellow uppercase text-base font-medium mb-1;
+}
+
+.heading-title {
+  @apply text-white text-2xl mb-2 md:text-[2rem];
+}
+
+.heading-text {
+  @apply text-body text-sm leading-[150%];
+}
+
+/* BACKTOTOP */
+.to-page-top {
+  @apply w-12 h-12 flex justify-center items-center bg-main hover:bg-mainAlt rounded-full fixed -bottom-20 right-5 z-40 duration-300;
+}
+
+.to-page-top > svg {
+  @apply fill-bgColor;
+}
+
+/* GLOWING EFFECTS */
+/* .glow {
+  @apply bg-[url(../images/glow.png)] w-[500px] h-[500px] absolute opacity-20 scale-150 mix-blend-screen blur-lg -top-36 -left-[110px]  -z-[1];
+} */
+
+.glow {
+  @apply w-[300px] h-[300px] rounded-full filter blur-[100px] bg-main absolute -z-[1] scale-150 opacity-30;
+}

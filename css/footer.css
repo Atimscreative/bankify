@@ -1,0 +1,47 @@
+#footer {
+  @apply py-20 bg-container bg-opacity-50;
+}
+
+.footer {
+  @apply grid grid-cols-1 gap-y-8 sm:grid-cols-3 sm:grid-rows-2 lg:grid-rows-1 lg:grid-cols-[350px_135px_135px_135px] lg:justify-between;
+}
+
+.footer-about {
+  @apply self-center col-[1_/_span_4] lg:col-span-1;
+}
+
+.footer-logo {
+  @apply inline-block font-playfair text-2xl text-white mb-3;
+}
+
+.footer-col {
+  @apply w-auto inline-flex flex-col col-[1_/_span_4] sm:col-span-1;
+}
+
+.footer-col h3 {
+  @apply text-white text-xl mb-1;
+}
+
+.footer-col a {
+  @apply hover:text-main mt-2;
+}
+
+.social-links {
+  @apply flex justify-start items-center gap-3 mt-6;
+}
+
+.social-icon {
+  @apply w-10 h-10 border border-solid border-body hover:border-none hover:bg-main rounded-full flex justify-center items-center duration-300;
+}
+
+.social-icon svg {
+  @apply fill-body w-5 h-5;
+}
+
+.social-icon:hover svg {
+  @apply fill-bgColor;
+}
+
+.copyright {
+  @apply mt-20 text-center text-sm;
+}

@@ -1,0 +1,70 @@
+#hero {
+  @apply w-full overflow-hidden lg:h-screen;
+}
+
+.box {
+  @apply lg:h-full lg:flex lg:justify-center lg:items-center;
+}
+
+.hero {
+  @apply w-full pt-24 pb-10
+
+  sm:pt-32 
+  
+  lg:flex lg:justify-between lg:items-center lg:pt-24;
+}
+
+.hero-content {
+  @apply w-full
+
+  sm:text-center
+
+  md:w-3/4 md:mx-auto
+  
+  lg:w-1/2 lg:text-left lg:mx-0;
+}
+
+.pre-text {
+  @apply uppercase text-main;
+}
+
+.hero-title {
+  @apply text-white font-bold text-3xl leading-[130%] mt-2 mb-10 
+
+  sm:text-4xl sm:leading-[135%]
+
+ lg:text-[2.5rem] lg:leading-[150%] xl:text-5xl xl:leading-[150%];
+}
+
+.hero-img {
+  @apply w-full mt-10 max-h-[400px] 
+
+
+  
+  lg:mt-0 lg:w-auto lg:h-[453px];
+}
+
+/* GLOWING EFFECTS */
+
+/* PARTNERS */
+
+#partners {
+  @apply bg-container p-5 lg:p-8;
+}
+
+.partners {
+  @apply flex justify-evenly items-center gap-7 flex-wrap sm:justify-center md:justify-between md:gap-0;
+}
+
+.partner {
+  @apply w-[115px] sm:w-auto sm:scale-75 md:w-[104px] md:scale-90 lg:scale-95 lg:w-auto;
+}
+
+/* GLOWING EFFECT */
+#hero > .glow {
+  @apply -top-36 -left-[110px];
+}
+
+#hero > .glow:nth-child(2) {
+  @apply top-auto left-auto -bottom-[163px] -right-[110px] mix-blend-luminosity;
+}

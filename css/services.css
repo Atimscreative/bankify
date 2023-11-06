@@ -1,0 +1,25 @@
+#services {
+  @apply py-20 pt-24;
+}
+
+.services {
+  @apply flex justify-between items-center gap-6 flex-wrap;
+}
+
+.service-box {
+  @apply w-full bg-container rounded-[20px] p-7
+  
+  md:w-[calc(50%_-_12px)]   lg:w-[calc(33%_-_13px)];
+}
+
+.service-icon {
+  @apply w-12 h-12 flex justify-center items-center rounded-full mb-4 bg-bgColor;
+}
+
+.service-type {
+  @apply text-xl text-white mb-2;
+}
+
+.service-brief {
+  @apply text-body font-light leading-[1.5];
+}

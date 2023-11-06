@@ -1,0 +1,53 @@
+#form-popup {
+  @apply fixed top-0 left-0 z-[60] bg-bgColor bg-opacity-50 w-full h-screen backdrop-blur-md flex justify-center items-center  invisible;
+}
+
+.close-popup {
+  @apply w-5 h-5 fill-white font-openSan font-semibold absolute right-5 top-5 cursor-pointer;
+}
+
+.register,
+.login {
+  @apply bg-container p-8;
+}
+
+.form-header {
+  @apply text-main text-center text-xl mb-5;
+}
+
+.input-field {
+  @apply mb-5;
+}
+
+.input-field label {
+  @apply inline-block text-sm text-body mb-2;
+}
+
+.input-field input {
+  @apply w-full p-2 rounded-sm text-body bg-containerAlt border border-solid border-containerAlt focus:outline-none focus:border-main invalid:focus:border-red-600;
+}
+
+.password-icon {
+  @apply absolute right-4 bottom-3 cursor-pointer text-main text-lg leading-4;
+}
+
+.login-btn {
+  @apply mt-4;
+}
+
+.hide {
+  @apply opacity-0;
+}
+
+.member {
+  @apply text-center text-sm mt-6;
+}
+
+.member > .login-acc,
+.member > .register-acc {
+  @apply text-main;
+}
+
+.forget-password {
+  @apply text-right text-sm mt-3 absolute right-0 cursor-pointer;
+}

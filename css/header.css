@@ -1,0 +1,60 @@
+#header {
+  @apply w-full py-4 duration-300 z-50;
+}
+
+.header {
+  @apply absolute;
+}
+
+.sticky-header {
+  @apply fixed top-0 left-0  bg-bgColor bg-opacity-80 backdrop-blur-md;
+}
+
+.navbar {
+  @apply w-full flex justify-between items-center;
+}
+
+.logo {
+  @apply text-white text-2xl font-playfair;
+}
+
+.nav-menu {
+  @apply w-full h-screen fixed top-0  p-5 pt-16 -left-full bg-containerAlt duration-300 flex justify-start items-center flex-col
+  
+  lg:h-auto lg:static lg:bg-opacity-0 lg:bg-transparent lg:duration-0
+  lg:flex-row lg:justify-between lg:p-0;
+}
+
+.show-menu {
+  @apply left-0;
+}
+
+.nav-list {
+  @apply w-full inline-flex items-center flex-col gap-7 mt-16 mb-10
+  sm:w-[280px]
+  lg:w-auto lg:h-auto lg:static lg:m-0 lg:mx-auto lg:bg-transparent lg:flex-row lg:gap-5;
+}
+
+.nav-link {
+  @apply relative text-2xl text-white capitalize hover:text-main duration-300  lg:ml-8 lg:text-base;
+}
+
+.nav-btn {
+  @apply relative text-2xl text-bgColor capitalize lg:ml-8 lg:text-base;
+}
+
+.nav-menu > .login-acc {
+  @apply bg-transparent text-main hover:text-mainAlt mb-3 lg:mb-0;
+}
+
+.nav-menu > .register-acc {
+  @apply hover:text-bgColor;
+}
+
+.menu {
+  @apply w-7 h-7 fill-white cursor-pointer lg:hidden;
+}
+
+.close-menu {
+  @apply absolute right-5 top-5;
+}

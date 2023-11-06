@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "./reset.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./services.css";
+@import "./about.css";
+@import "./operations.css";
+@import "./testimonials.css";
+@import "./cta.css";
+@import "./footer.css";
+
+/* OTHERS */
+@import "./register.css";
+
+@import "tailwindcss/utilities";

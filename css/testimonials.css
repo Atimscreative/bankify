@@ -1,0 +1,69 @@
+#reviews {
+  @apply py-20;
+}
+
+.testimonial {
+  @apply w-full p-8 bg-container
+  
+  md:w-[80%] lg:w-3/4;
+}
+
+.testimonial > * {
+  @apply z-[1];
+}
+
+.testimonial-header {
+  @apply text-white text-xl mb-2;
+}
+
+.testimonial-author {
+  @apply grid grid-cols-[4rem_1fr] gap-x-5 mt-3;
+}
+
+.testimonial-photo {
+  @apply w-16 h-16 rounded-full row-[1_/_span_2];
+}
+
+.testimonial-name {
+  @apply self-end;
+}
+/* SLIDER */
+.slider {
+  @apply max-w-[1000px] h-[400px] mx-auto my-0 overflow-hidden
+  
+  md:h-[350px];
+}
+
+.slide {
+  @apply absolute top-0 w-full h-full flex items-start justify-center transition-transform duration-1000;
+}
+
+.slider-btn {
+  @apply h-[55px] w-[55px] absolute bottom-0 z-10 border-none bg-main hover:bg-mainAlt   text-bgColor rounded-full  text-2xl font-bold cursor-pointer flex justify-center gap-5 items-center shadow-lg
+  
+  md:bottom-1/2 md:-translate-y-8;
+}
+
+.slider-btn-left {
+  @apply left-0;
+}
+
+.slider-btn-right {
+  @apply right-0;
+}
+
+.dots {
+  @apply flex justify-center items-center gap-5 absolute bottom-5 left-1/2 -translate-x-1/2;
+}
+
+.dots-dot {
+  @apply bg-body bg-opacity-30 h-3 w-3 rounded-full cursor-pointer duration-500 transition-all;
+}
+
+.dots-dot-active {
+  @apply bg-main bg-opacity-100;
+}
+
+#reviews > .glow {
+  @apply left-auto top-auto -bottom-44 -right-36 scale-125;
+}

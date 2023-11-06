@@ -1,0 +1,39 @@
+#about {
+  @apply py-20;
+}
+
+.about {
+  @apply flex justify-between items-center flex-wrap;
+}
+
+.about-content {
+  @apply w-full md:w-[calc(50%_-_10px)] lg:w-1/2;
+}
+
+.pre-heading {
+  @apply uppercase text-main;
+}
+
+.about-heading {
+  @apply text-2xl font-bold text-white mt-2 mb-3 
+  
+  md:leading-[150%] md:text-[2rem]
+  
+  lg:text-[2rem];
+}
+
+.about-info {
+  @apply text-base;
+}
+
+.about-btn {
+  @apply mt-8;
+}
+
+.about-img {
+  @apply w-full scale-90 mt-10 md:mt-0 md:w-[calc(50%_-_20px)];
+}
+
+#about .glow {
+  @apply inset-auto top-80 -right-52 scale-150;
+}
